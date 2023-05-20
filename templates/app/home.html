@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WhatsApp Chat Analysis</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="/static/home/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="/static/home/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/home/css/jquery-ui.css">
+    <link rel="stylesheet" href="/static/home/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/home/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/home/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/home/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/static/home/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/static/home/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="/static/home/css/aos.css">
+    <link rel="stylesheet" href="/static/home/css/style.css">
+</head>
+{% extends "app/base_.html" %}
+{% block content %}
+<div class="site-section" id="abstract-section">
+    <div class="container">
+        <div class="row mb-5 justify-content-center">
+            <div class="col-md-12 text-center">
+                <h3 class="section-sub-title"></h3>
+                <h2 class="section-title mb-3">Abstract</h2>
+                <p>
+                    WhatsApp become an integral part of day today life to share thought or chat, and
+                    organizations also having current focus in the industry is to build a better Chabot
+                    enriching the human experience. Comprehension of customer reactions thus
+                    becomes a natural expectation. To achieve this, the business chat needs to understand
+                    the computational linguistics, context, and tone of the customer. The opinion or
+                    sentiment expressed in a document or sentence can be binary (positive, negative.
+                    Enabling sentiment analysis on WhatsApp chat not only helps tweak the responses
+                    according to user mood but also helps in advance analysis of services and
+                    breakdowns. WhatsApp group chat generate large amounts of data every day. Every
+                    user sends a lot of textual data over the network. The proposed chat analysis system
+                    uses this data to learn and predict the sentiment or the mood of the user at that
+                    particular time. Human being can correctly predict the mood of the user by reading
+                    his/her chat messages. To enable a system to do a similar task we need to convert
+                    this textual data into features which a machine can understand. Once the features are
+                    selected the system classifiers are trained using a training set.
+                </p>
+                <b>Problem:</b><i> Have you ever wondered what's going on in your WhatsApp groups?</i><br>
+                <b>Solution:</b><i>You are a group of college friends. As you recently all left WhatsApp and
+                wanted to analyze how or chats evolved over the years</i>
+            </div>
+        </div>
+        <div class="row mb-5 justify-content-center">
+            <div class="col-md-12 text-center">
+                <img src="/static/home/images/img_abstract.JPG">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-blocks-cover inner-page-cover overlay get-notification" id="demo-section"
+     style="background-image: url(/static/home/images/hero_2.jpg); background-attachment: fixed;" data-aos="fade">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <form class="col-md-7" method="post" action="/">
+                {% csrf_token %}
+                <h2>Login</h2>
+                <div class="d-flex mb-4">
+                    <input type="text" class="form-control rounded-0" placeholder="User Name" name="username"
+                           required="">
+                    <input type="password" class="form-control rounded-0" placeholder="Password" name="password"
+                           required="">
+                    <input type="submit" class="btn btn-white btn-outline-white rounded-0" value="Login">
+                </div>
+                <p><label class="text-danger bg-dark"><b>{{message}}</b></label></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="site-section bg-light" id="conclusion-section">
+    <div class="container">
+        <div class="row align-items-lg-center">
+            <div class="col-md-4 mb-5 mb-lg-0 position-relative">
+                <img src="/static/home/images/about_1.jpg" class="img-fluid" alt="Image">
+                <div class="experience">
+                    <span class="year">YEAR</span>
+                    <span class="caption">2022-23</span>
+                </div>
+            </div>
+            <div class="col-md-8 ml-auto">
+                <h3 class="section-sub-title"></h3>
+                <h2 class="section-title mb-3">Conclusion and Future Work</h2>
+                <p class="mb-4">
+                    In former times there is no analysis for WhatsApp chat. If someone wants to analyze
+                    there is no CSV file to analyze, he or she need to analyze chat manually. WhatsApp
+                    Application provide export txt file which is in raw format. It is very complicated for
+                    analysis.<br>
+                    <i><b>In contras Proposed system is based on computer application, hence we get: </b></i>
+                    <ul>
+                        <li>Easy way of working large dataset.</li>
+                        <li>Better accuracy</li>
+                        <li>Faster</li>
+                    </ul>
+                    It is interesting to see if theres a
+                    more analysis graph for the WhatsApp Chat Analysis. We will
+                    leave it as a future work.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+</html>

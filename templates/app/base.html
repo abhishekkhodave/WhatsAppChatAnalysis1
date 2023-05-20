@@ -1,0 +1,70 @@
+<body>
+<section id="container">
+    <!--header start-->
+    <header class="header fixed-top clearfix">
+        <!--logo start-->
+        <div class="brand">
+
+            <a href="uploaddataset" class="logo">
+                <img src="/static/public/images/logo.png" width="150"/>
+            </a>
+            <div class="sidebar-toggle-box">
+                <div class="fa fa-bars"></div>
+            </div>
+        </div>
+        <!--logo end-->
+        <div class="top-nav clearfix">
+            <!--search & user info start-->
+            <ul class="nav pull-right top-menu">
+                <!-- user login dropdown start-->
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <img alt="" src="/static/public/images/1.png">
+                        <span class="username">Welcome! Admin</span>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu extended logout">
+                        <li><a href="/"><i class="fa fa-lock"></i>Logout</a></li>
+                    </ul>
+                </li>
+                <!-- user login dropdown end -->
+
+            </ul>
+            <!--search & user info end-->
+        </div>
+    </header>
+    <!--header end-->
+    <!--sidebar start-->
+    <aside>
+        <div id="sidebar" class="nav-collapse">
+            <!-- sidebar menu start-->
+            <div class="leftside-navigation">
+                <ul class="sidebar-menu" id="nav-accordion">
+                    <li><a href="uploaddataset"><span>Upload Dataset</span></a></li>
+                    <li><a href="viewdataset"><span>View Dataset</span></a></li>
+                    <li><a href="groupstat"><span>Group Chatting Stats</span></a></li>
+                    <li><a href="wordcloud"><span>Word Cloud</span></a></li>
+                    <li><a href="activemembers"><span>Top 5 Active Members</span></a></li>
+                    <li><a href="activemonths"><span>Active Months Line Plot</span></a></li>
+                    <li><a href="activedays"><span>Active Days of Week</span></a></li>
+                    <li><a href="activetimes"><span>Active Times of Day</span></a></li>
+                </ul>
+            </div>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+
+    {% block content %}{% endblock %}
+
+</section>
+<script src="/static/public/js/bootstrap.js"></script>
+<script src="/static/public/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="/static/public/js/scripts.js"></script>
+<script src="/static/public/js/jquery.slimscroll.js"></script>
+<script src="/static/public/js/jquery.nicescroll.js"></script>
+<!--[if lte IE 8]>
+<script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script>
+<![endif]-->
+<script src="/static/public/js/jquery.scrollTo.js"></script>
+</body>
